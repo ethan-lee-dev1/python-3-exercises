@@ -7,7 +7,7 @@ def find_total_visits():
             next(file)
             lines = csv.reader(file, delimiter=',')
             for line in lines:
-                # print(line)
+                print(line)
                 for value in line[1:]:
                     if int(value) == 1:
                         result += 1
